@@ -1544,8 +1544,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 833954373}
+  - component: {fileID: 833954374}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: BattleForMiddleHills
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1566,6 +1567,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &833954374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833954372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8186ba0189350d14fa88f3ce60d27683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1308867024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10983,38 +10996,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8243653948452336127, guid: 0727e854e691beb41813e57256803b51, type: 3}
       insertIndex: 1
       addedObject: {fileID: 536579824}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8825257682457151329, guid: 0727e854e691beb41813e57256803b51, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1482448434}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0727e854e691beb41813e57256803b51, type: 3}
---- !u!1 &1308867025 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8825257682457151329, guid: 0727e854e691beb41813e57256803b51, type: 3}
-  m_PrefabInstance: {fileID: 1308867024}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1482448433 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8243653948452336127, guid: 0727e854e691beb41813e57256803b51, type: 3}
   m_PrefabInstance: {fileID: 1308867024}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1482448434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308867025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c6f80182aefb134a991b24abd3c00b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selection: 0
-  treeApples: {fileID: 1339536321328131832, guid: be785b53e8101134cb49e391918a7a82, type: 3}
-  treeNoApples: {fileID: -3953209486756653526, guid: be785b53e8101134cb49e391918a7a82, type: 3}
-  shadowTreeApples: {fileID: -8184837761918644901, guid: da4d732596845594e9b99bf9488ee15f, type: 3}
-  shadowTreeNoApples: {fileID: -5767133754201675963, guid: da4d732596845594e9b99bf9488ee15f, type: 3}
 --- !u!1 &1946903449
 GameObject:
   m_ObjectHideFlags: 0
