@@ -17,11 +17,11 @@ public class BattleForMiddleHills : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moveArmy(blueArmy.transform, Vector3.right);
-        moveArmy(redArmy.transform, Vector3.left);
+        MoveArmy(blueArmy.transform, Vector3.right);
+        MoveArmy(redArmy.transform, Vector3.left);
     }
 
-    private void moveArmy(Transform armyTransform, Vector3 direction)
+    private void MoveArmy(Transform armyTransform, Vector3 direction)
     {
         foreach (Transform unit in armyTransform)
         {

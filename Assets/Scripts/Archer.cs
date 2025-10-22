@@ -22,16 +22,16 @@ public class Archer : MonoBehaviour
         {
             case Team.Blue:
                 transform.localScale = new Vector3(-1, 1, 1);
-                setSprites(blueSprites);
+                SetSprites(blueSprites);
                 break;
             case Team.Red:
                 transform.localScale = new Vector3(1, 1, 1);
-                setSprites(redSprites);
+                SetSprites(redSprites);
                 break;
         }
     }
 
-    private void setSprites(ArcherSpriteSet sprites)
+    private void SetSprites(ArcherSpriteSet sprites)
     {
         Transform body = transform.Find("Body");
         body.gameObject.GetComponent<SpriteRenderer>().sprite = sprites.body;
