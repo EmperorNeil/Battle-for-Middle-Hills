@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Title + Buttons
   - 
   - 
   - 
@@ -46,6 +46,9 @@ TagManager:
     locked: 0
   - name: Units
     uniqueID: 1177581423
+    locked: 0
+  - name: UI
+    uniqueID: 161935179
     locked: 0
   m_RenderingLayers:
   - Default
