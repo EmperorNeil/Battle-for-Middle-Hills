@@ -1,0 +1,4 @@
+﻿Battle for Wesnoth, licensed under CC BY-SA 4.0
+Knight: Grand Knight - Battle for Wesnoth
+Archer: Master Bowman - Battle for Wesnoth
+Pikeman: Pikeman - Battle for Wesnoth
