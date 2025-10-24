@@ -9,6 +9,7 @@ namespace Battle.Units
 
         public Team Team
         {
+            get => team;
             set => team = value;
         }
 

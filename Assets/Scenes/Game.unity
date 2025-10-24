@@ -2230,6 +2230,8 @@ MonoBehaviour:
   archerPrefab: {fileID: 7874151833956603545, guid: 979b635b9c518344a82eec4cab6556e7, type: 3}
   knightPrefab: {fileID: 3035708060108620058, guid: cb7d0657bf33f7f43b4bc1932f28c71e, type: 3}
   pikemanPrefab: {fileID: 6249340027664323307, guid: 667e08f6a256d8e458cd9bbcc4602f4c, type: 3}
+  blueIncomeCounter: {fileID: 1759605239}
+  baseIncome: 1
 --- !u!1 &884404960
 GameObject:
   m_ObjectHideFlags: 0
@@ -2443,6 +2445,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1481205640}
     m_Modifications:
+    - target: {fileID: 5002397926594042237, guid: 94cd6247e84fedf4d97418231f81a6ba, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 833954374}
     - target: {fileID: 7174393144261649330, guid: 94cd6247e84fedf4d97418231f81a6ba, type: 3}
       propertyPath: m_Name
       value: BottomLane
@@ -13904,6 +13910,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1481205640}
     m_Modifications:
+    - target: {fileID: 5002397926594042237, guid: 94cd6247e84fedf4d97418231f81a6ba, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 833954374}
     - target: {fileID: 7174393144261649330, guid: 94cd6247e84fedf4d97418231f81a6ba, type: 3}
       propertyPath: m_Name
       value: MiddleLane
@@ -14084,6 +14094,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1481205640}
     m_Modifications:
+    - target: {fileID: 5002397926594042237, guid: 94cd6247e84fedf4d97418231f81a6ba, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 833954374}
     - target: {fileID: 7174393144261649330, guid: 94cd6247e84fedf4d97418231f81a6ba, type: 3}
       propertyPath: m_Name
       value: TopLane

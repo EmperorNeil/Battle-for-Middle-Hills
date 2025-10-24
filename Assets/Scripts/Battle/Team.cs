@@ -1,9 +1,9 @@
-﻿
-namespace Battle
+﻿namespace Battle
 {
     public enum Team
     {
         Red,
-        Blue
+        Blue,
+        None
     }
 }
