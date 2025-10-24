@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Battle.Units;
 using TMPro;
 using UnityEngine;
 using Math = System.Math;
+using Random = UnityEngine.Random;
 
 namespace Battle
 {
@@ -27,6 +29,11 @@ namespace Battle
             income[Team.Red] = baseIncome;
             UpdateIncomeCounter(Team.Blue);
             StartCoroutine(SpawnWaveRoutine(2f));
+        }
+
+        private void OnValidate()
+        {
+            SetBlueIncomeCounter(baseIncome);
         }
 
         IEnumerator SpawnWaveRoutine(float spawnDelay)
@@ -83,8 +90,13 @@ namespace Battle
         {
             if (team == Team.Blue)
             {
-                blueIncomeCounter.GetComponent<TextMeshProUGUI>().SetText(income[Team.Blue].ToString());
+                SetBlueIncomeCounter(income[Team.Blue]);
             }
+        }
+
+        private void SetBlueIncomeCounter(int newValue)
+        {
+            blueIncomeCounter.GetComponent<TextMeshProUGUI>().SetText(newValue.ToString());
         }
 
         private Unit RandomUnit()
