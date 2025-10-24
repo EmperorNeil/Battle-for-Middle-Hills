@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4598376476724385637}
   - component: {fileID: 2890268551727442625}
   - component: {fileID: 3588531627101572097}
-  - component: {fileID: 5688817238219325886}
+  - component: {fileID: 2187813418654279310}
   m_Layer: 0
-  m_Name: Knight
+  m_Name: BlankUnit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.59, y: 0.81}
+    oldSize: {x: 0.36, y: 0.54}
     newSize: {x: 0.36, y: 0.54}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -94,9 +94,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   team: 1
-  unitType: 1
-  blueSprite: {fileID: -5960918590223440415, guid: bb3a18a790ee0ef49b74271d55760f5e, type: 3}
-  redSprite: {fileID: 6911062952095077148, guid: ae6189a101827eb4d9d2b22ac3afc79e, type: 3}
+  unitType: 0
+  blueSprite: {fileID: 0}
+  redSprite: {fileID: 0}
 --- !u!212 &3588531627101572097
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -144,7 +144,7 @@ SpriteRenderer:
   m_SortingLayerID: 1177581423
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5960918590223440415, guid: bb3a18a790ee0ef49b74271d55760f5e, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -152,10 +152,10 @@ SpriteRenderer:
   m_Size: {x: 0.36, y: 0.54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &5688817238219325886
+--- !u!50 &2187813418654279310
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0

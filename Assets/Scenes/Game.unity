@@ -2227,9 +2227,9 @@ MonoBehaviour:
   - {fileID: 1913735660}
   - {fileID: 1884460983}
   - {fileID: 1176027780}
-  archerPrefab: {fileID: 2890268551727442625, guid: eb4e409182f2b624292d1dc536444aa4, type: 3}
-  knightPrefab: {fileID: 2890268551727442625, guid: 4410a3617635af746af1c82cf0f16d6a, type: 3}
-  pikemanPrefab: {fileID: 2890268551727442625, guid: b662eaee315c1f74b9d2e3bb54084493, type: 3}
+  archerPrefab: {fileID: 7874151833956603545, guid: 979b635b9c518344a82eec4cab6556e7, type: 3}
+  knightPrefab: {fileID: 3035708060108620058, guid: cb7d0657bf33f7f43b4bc1932f28c71e, type: 3}
+  pikemanPrefab: {fileID: 6249340027664323307, guid: 667e08f6a256d8e458cd9bbcc4602f4c, type: 3}
 --- !u!1 &884404960
 GameObject:
   m_ObjectHideFlags: 0
