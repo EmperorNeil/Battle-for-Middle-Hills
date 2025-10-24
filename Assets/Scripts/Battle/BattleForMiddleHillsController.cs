@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using Battle.Units;
 using UnityEngine;
 
@@ -20,12 +21,40 @@ namespace Battle
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
+            StartCoroutine(SpawnWaveRoutine(2f));
+        }
+
+        IEnumerator SpawnWaveRoutine(float spawnDelay)
+        {
+            while (true)
+            {
+                SpawnRandomWave();
+                yield return new WaitForSeconds(spawnDelay);
+            }
+        }
+        
+        private void SpawnRandomWave()
+        {
             foreach (Lane lane in lanes)
             {
-                lane.SpawnUnit(Team.Blue, archerPrefab);
-                lane.SpawnUnit(Team.Red, archerPrefab);
+                
+                lane.SpawnUnit(Team.Blue, RandomUnit());
+                lane.SpawnUnit(Team.Red, RandomUnit());
             }
         }
 
+        private Unit RandomUnit()
+        {
+            var unitType = Random.Range(0, 3);
+            switch (unitType)
+            {
+                case 0:
+                    return archerPrefab;
+                case 1:
+                    return knightPrefab;
+                default:
+                    return pikemanPrefab;
+            }
+        }
     }
 }

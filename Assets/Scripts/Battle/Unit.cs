@@ -5,17 +5,22 @@ namespace Battle.Units
 {
     public class Unit : MonoBehaviour
     {
+        [SerializeField] private Team team;
 
-        [SerializeField]
-        private Team team;
-        public Team Team { set => team = value; }
+        public Team Team
+        {
+            set => team = value;
+        }
 
-        [Header("Sprites")]
+        [SerializeField] private UnitType unitType;
 
-        [SerializeField]
-        private Sprite blueSprite;
-        [SerializeField]
-        private Sprite redSprite;
+        public UnitType UnitType
+        {
+            get => unitType;
+        }
+
+        [Header("Sprites")] [SerializeField] private Sprite blueSprite;
+        [SerializeField] private Sprite redSprite;
 
         void OnValidate()
         {
@@ -50,8 +55,33 @@ namespace Battle.Units
         private void Update()
         {
             var direction = team == Team.Blue ? Vector3.right : Vector3.left;
-            transform.Translate(direction * Time.deltaTime);
+            transform.Translate(direction * (Time.deltaTime));
+        }
 
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            var otherUnit = other.GetComponentInParent<Unit>();
+            if (otherUnit != null)
+            {
+                BeginFighting(otherUnit);
+            }
+        }
+
+        private void BeginFighting(Unit otherUnit)
+        {
+            var otherType = otherUnit.UnitType;
+            if (unitType == otherType
+                || (unitType == UnitType.Archer && otherType == UnitType.Knight)
+                || (unitType == UnitType.Knight && otherType == UnitType.Pikeman)
+                || (unitType == UnitType.Pikeman && otherType == UnitType.Archer))
+            {
+                OnDefeat();
+            }
+        }
+
+        private void OnDefeat()
+        {
+            Destroy(gameObject);
         }
     }
 }
