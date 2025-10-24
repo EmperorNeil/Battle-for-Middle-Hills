@@ -40,6 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9183750005567640010}
+  - component: {fileID: 2130589255924746492}
   m_Layer: 0
   m_Name: Lane
   m_TagString: Untagged
@@ -65,6 +66,18 @@ Transform:
   - {fileID: 897269535336143856}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2130589255924746492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7174393144261649330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485a22c0e6bd4c29bc894ee62cc6b02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Battle.Lane
 --- !u!1 &7520126311168781428
 GameObject:
   m_ObjectHideFlags: 0

@@ -2222,9 +2222,14 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8186ba0189350d14fa88f3ce60d27683, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  redArmy: {fileID: 1885968608}
-  blueArmy: {fileID: 1438848988}
+  m_EditorClassIdentifier: Assembly-CSharp::Battle.BattleForMiddleHills
+  lanes:
+  - {fileID: 1913735660}
+  - {fileID: 1884460983}
+  - {fileID: 1176027780}
+  archerPrefab: {fileID: 2890268551727442625, guid: eb4e409182f2b624292d1dc536444aa4, type: 3}
+  knightPrefab: {fileID: 2890268551727442625, guid: 4410a3617635af746af1c82cf0f16d6a, type: 3}
+  pikemanPrefab: {fileID: 2890268551727442625, guid: b662eaee315c1f74b9d2e3bb54084493, type: 3}
 --- !u!1 &884404960
 GameObject:
   m_ObjectHideFlags: 0
@@ -2492,6 +2497,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9183750005567640010, guid: 94cd6247e84fedf4d97418231f81a6ba, type: 3}
   m_PrefabInstance: {fileID: 1176027778}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1176027780 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2130589255924746492, guid: 94cd6247e84fedf4d97418231f81a6ba, type: 3}
+  m_PrefabInstance: {fileID: 1176027778}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485a22c0e6bd4c29bc894ee62cc6b02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Battle.Lane
 --- !u!1 &1269504828
 GameObject:
   m_ObjectHideFlags: 0
@@ -13942,6 +13958,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9183750005567640010, guid: 94cd6247e84fedf4d97418231f81a6ba, type: 3}
   m_PrefabInstance: {fileID: 1884460981}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1884460983 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2130589255924746492, guid: 94cd6247e84fedf4d97418231f81a6ba, type: 3}
+  m_PrefabInstance: {fileID: 1884460981}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485a22c0e6bd4c29bc894ee62cc6b02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Battle.Lane
 --- !u!1 &1885968608
 GameObject:
   m_ObjectHideFlags: 0
@@ -14111,6 +14138,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9183750005567640010, guid: 94cd6247e84fedf4d97418231f81a6ba, type: 3}
   m_PrefabInstance: {fileID: 1913735658}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1913735660 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2130589255924746492, guid: 94cd6247e84fedf4d97418231f81a6ba, type: 3}
+  m_PrefabInstance: {fileID: 1913735658}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485a22c0e6bd4c29bc894ee62cc6b02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Battle.Lane
 --- !u!1 &1916591533
 GameObject:
   m_ObjectHideFlags: 0
